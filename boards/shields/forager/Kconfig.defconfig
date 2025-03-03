@@ -32,4 +32,10 @@ config BT_MAX_CONN
 config BT_MAX_PAIRED
     default 6
 
+config PROSPECTOR_FIXED_BRIGHTNESS
+    int "Fixed brightness level for Prospector"
+    depends on !PROSPECTOR_USE_AMBIENT_LIGHT_SENSOR
+    default 20
+    help
+      Sets a fixed brightness level for the Prospector keyboard when ambient light sensor is disabled.
 endif
