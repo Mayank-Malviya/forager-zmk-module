@@ -18,7 +18,7 @@ config ZMK_SPLIT
 
 config ZMK_BLE
     default y
-    
+
 # Set this to the number of peripherals your dongle will have.
 # For a unibody, this would be 1. If you have left and right halves, set it to 2, etc.
 config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
@@ -31,19 +31,5 @@ config BT_MAX_CONN
 # Set this to the same number as BT_MAX_CONN
 config BT_MAX_PAIRED
     default 6
-
-endif
-
-# Prospector adapter configuration
-if SHIELD_PROSPECTOR_ADAPTER
-
-
-
-config PROSPECTOR_FIXED_BRIGHTNESS
-    int "Fixed brightness level for Prospector"
-    depends on !PROSPECTOR_USE_AMBIENT_LIGHT_SENSOR
-    default 20
-    help
-      Sets a fixed brightness level for the Prospector keyboard when ambient light sensor is disabled.
 
 endif
