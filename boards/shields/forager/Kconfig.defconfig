@@ -32,6 +32,12 @@ config BT_MAX_CONN
 config BT_MAX_PAIRED
     default 6
 
+config PROSPECTOR_USE_AMBIENT_LIGHT_SENSOR
+    bool "Use ambient light sensor for brightness adjustment"
+    default y
+    help
+      Enables the use of an ambient light sensor to automatically adjust display brightness.
+      
 config PROSPECTOR_FIXED_BRIGHTNESS
     int "Fixed brightness level for Prospector"
     default 1
