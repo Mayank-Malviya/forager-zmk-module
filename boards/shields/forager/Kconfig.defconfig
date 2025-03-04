@@ -38,10 +38,6 @@ config PROSPECTOR_USE_AMBIENT_LIGHT_SENSOR
     help
       Enables the use of an ambient light sensor to automatically adjust display brightness.
 
-#config PROSPECTOR_FIXED_BRIGHTNESS
-#    int "Fixed brightness level for Prospector"
-#    default 1
-#    help
-#      Sets a fixed brightness level for the Prospector keyboard when ambient light sensor is disabled.
+
 
 endif
